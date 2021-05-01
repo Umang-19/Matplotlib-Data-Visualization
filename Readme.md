@@ -127,7 +127,7 @@ plt.title('Countries Population')
 plt.legend()
 plt.show()
 ```
-![Pie Plot](pieplot.png "PiePlot")
+![Pie Plot](pieplot.PNG "PiePlot")
 
 ***
 ###
