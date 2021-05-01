@@ -51,6 +51,7 @@ plt.plot(x1,y2,color='red', linewidth=2, marker='*')
 plt.grid(True, color='black')
 plt.show()
 ```
+![Line Plot](lineplot.PNG "Line Plot")
 ***
 
 ### 2. Scatter Plots
@@ -68,6 +69,8 @@ plt.scatter(x,y2, color='yellow', label='Plot 2')
 plt.legend()
 plt.show()
 ```
+![Scatter Plot](scatterplot.PNG "Scatter Plot")
+
 ***
 
 ### 3. Bar Plots
@@ -104,6 +107,8 @@ plt.title('Metal Prices')
 plt.legend(fontsize = 15)
 plt.show()
 ```
+![Bar Plot](barplot.PNG "Bar Plot")
+
 ***
 
 ### 4. Pie Chart
