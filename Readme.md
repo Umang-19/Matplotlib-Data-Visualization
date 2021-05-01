@@ -51,6 +51,8 @@ plt.plot(x1,y2,color='red', linewidth=2, marker='*')
 plt.grid(True, color='black')
 plt.show()
 ```
+***
+
 ### 2. Scatter Plots
 A scatter plot is a chart type that is normally used to observe and visually display the relationship between variables.
 **Example:**
@@ -66,6 +68,7 @@ plt.scatter(x,y2, color='yellow', label='Plot 2')
 plt.legend()
 plt.show()
 ```
+***
 
 ### 3. Bar Plots
 * Bar plots are used to see distribution of categorical data.
@@ -101,4 +104,30 @@ plt.title('Metal Prices')
 plt.legend(fontsize = 15)
 plt.show()
 ```
+***
 
+### 4. Pie Chart
+* Pie charts is used to have a general sense of the part-to-whole relationship in your data.
+* To convey that one segment of the total is relatively less or more important.
+**Example:**
+```python
+# Simple pie plot
+data = np.array([35,25,25,15])
+plt.pie(data)
+plt.show()
+
+population = np.array([90,80,40,98,20])
+countries = ["India","China","America","Japan","Pakistan"]
+mycolors = ["orange","red","skyblue","blue","green"]
+spacing = (0.1,0,0.1,0,0)
+
+plt.figure(figsize = (8,8))
+plt.pie(population, labels=countries, explode=spacing, shadow = True, colors=mycolors, autopct= '%1.1f%%')
+plt.title('Countries Population')
+plt.legend()
+plt.show()
+```
+![Pie Plot](pieplot.png "PiePlot")
+
+***
+###
