@@ -134,5 +134,27 @@ plt.show()
 ```
 ![Pie Plot](pieplot.PNG "PiePlot")
 
+_Note: By default the plotting of the first wedge starts from the x-axis and move anticlockwise._
 ***
-###
+### 5. Histogram
+* A histogram is a graph showing frequency distributions.
+* It is a graph showing the number of observations within each given interval.
+**Example:**
+```python
+X_standardNormal = np.random.randn(100)
+sigma = 5
+u = 75
+X = np.round(sigma*X_standardNormal + u)
+Y = np.round(sigma*X_standardNormal + u-20)
+
+
+plt.hist(X,label = 'maths',color = 'blue',alpha = 0.3)
+plt.hist(Y,label = 'physics',color = 'red',alpha = 0.2)
+
+plt.title('Marks of the students')
+plt.xlabel('marks')
+plt.ylabel('freq. of number of students')
+plt.legend()
+plt.show()
+```
+![Histogram](histogram.PNG "Histogram")
